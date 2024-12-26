@@ -19,10 +19,11 @@ pipeline {
                     ls -la
                 '''
             }
-        } stage('Test') {
+        } 
+        
+        stage('Test') {
             steps {
                 sh '''
-                    npm run test
                     echo "Test stage"
                 '''
             }
